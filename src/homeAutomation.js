@@ -41,23 +41,27 @@ function home_automation():React.Component {
             const temp = tempData.main.temp;
             const temp_min = tempData.main.temp_min;
             const temp_max = tempData.main.temp_max;
-            return <View style={styles.TemperatureRow}>
-                <Text style={styles.TemperatureCurrent}>
-                    {temp}˚
-                </Text>
-                <Text style={styles.TemperatureMinMax}>
-                    Min: {temp_min}˚   |   Max: {temp_max}˚
-                </Text>
-            </View>
+            return (
+                <View style={styles.TemperatureRow}>
+                    <Text style={styles.TemperatureCurrent}>
+                        {temp}˚
+                    </Text>
+                    <Text style={styles.TemperatureMinMax}>
+                        Min: {temp_min}˚   |   Max: {temp_max}˚
+                    </Text>
+                </View>
+            );
         }
 
         styleWemo() {
             if (this.state.appState === 'initial') {
-                return <View>
-                    <Text>
-                        Loading, please wait
-                    </Text>
-                </View>
+                return (
+                    <View>
+                        <Text>
+                            Loading, please wait
+                        </Text>
+                    </View>
+                );
             } else {
                 var buttons = [];
                 var switchesData = this.state.switches;
@@ -81,7 +85,7 @@ function home_automation():React.Component {
                         </TouchableOpacity>
                     )
 
-                })
+                });
                 return (
                     <View style={styles.WemoRow}>
                         {buttons}
@@ -91,25 +95,29 @@ function home_automation():React.Component {
         }
 
         styleUI() {
-            return <View style={styles.container}>
-                <View style={styles.TemperatureContainer}>
-                    {this.styleTemperature(this.state.temperatureData)}
+            return (
+                <View style={styles.container}>
+                    <View style={styles.TemperatureContainer}>
+                        {this.styleTemperature(this.state.temperatureData)}
+                    </View>
+                    <View style={styles.WemoContainer}>
+                        {this.styleWemo()}
+                    </View>
                 </View>
-                <View style={styles.WemoContainer}>
-                    {this.styleWemo()}
-                </View>
-            </View>
+            );
         }
 
         render() {
             if(this.state.appState ==='initial') {
-                return <View style={styles.TemperatureContainer}>
-                    <Text>
-                        Loading, please wait
-                    </Text>
-                </View>
+                return (
+                    <View style={styles.TemperatureContainer}>
+                        <Text>
+                            Loading, please wait
+                        </Text>
+                    </View>
+                );
             } else {
-                return this.styleUI()
+                return this.styleUI();
             }
         }
     }
