@@ -13,9 +13,21 @@ The main motive of this project is to reuse those old smart phones that I have a
 Requirements
 ============
  
- 1. A running [ouimeaux](https://ouimeaux.readthedocs.io/en/latest/)server for managing belkin switches. This is currently running on a
+ 1. A running [ouimeaux](https://ouimeaux.readthedocs.io/en/latest/) server for managing belkin switches. This is currently running on a
   raspberry pi for my setup. 
 
 Setup Instructions
 ==================
 TODO
+
+
+TODOS
+=====
+Documentation
+-------------
+1. Complete setup instructions for documentation
+2. Add screenshots as and when updated
+ 
+API Integration
+---------------
+WIP
