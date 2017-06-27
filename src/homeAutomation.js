@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         alignSelf: 'stretch',
         backgroundColor: 'purple',
-        height:170,
+        height:120,
         paddingTop:15,
         paddingBottom: 15
     },
@@ -144,8 +144,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'green',
         alignSelf: 'stretch',
         alignItems: 'center',
-        height:75,
-        width: width-30,
+        height:60,
+        width: width-50,
         paddingLeft: 15,
         paddingRight: 15,
         paddingTop: 25,
@@ -153,15 +153,15 @@ const styles = StyleSheet.create({
         marginBottom:5
     },
     WemoButtonText: {
-        fontSize: 20,
+        fontSize: 15,
         color: 'white',
     },
     TemperatureCurrent: {
-        fontSize: 80,
+        fontSize: 50,
         color: 'white',
     },
     TemperatureMinMax: {
-        fontSize: 20,
+        fontSize: 12,
         color: 'white',
     },
     WemoContainer: {
