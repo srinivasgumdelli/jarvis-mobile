@@ -23,11 +23,9 @@ TODO
 
 TODOS
 =====
-Documentation
--------------
+### Documentation
 1. Complete setup instructions for documentation
 2. Add screenshots as and when updated
  
-API Integration
----------------
+### API Integration
 WIP
